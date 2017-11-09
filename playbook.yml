@@ -1,0 +1,8 @@
+- hosts: localhost
+  roles:
+    - { role: xscript.parent }
+  tasks:
+    - name: create resource group
+      azure_rm_rg:
+        name: "ansible-demo"
+        location: "westus"

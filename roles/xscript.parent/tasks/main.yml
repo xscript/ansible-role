@@ -1,0 +1,10 @@
+---
+# tasks file for xscript.parent
+- name: Include xscript.child-1 if Ansible Version is 2.4
+  include_role:
+    name: xscript.child-1
+  when: ansible_version.major == 2 and ansible_version.minor == 4
+- name: Include xscript.child-2 if Ansible Version is 2.5
+  include_role:
+    name: xscript.child-2
+  when: ansible_version.major == 2 and ansible_version.minor == 5

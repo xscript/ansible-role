@@ -1,0 +1,4 @@
+---
+# tasks file for xscript.child-1
+- name: Print in console
+  command: echo "xscript.child-1"
